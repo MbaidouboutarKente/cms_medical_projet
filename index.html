@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CMS Médical - Université de Ngaoundéré</title>
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+  <style>
+    /* Styles généraux */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bg.png'); /* Image de fond */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Conteneur principal */
+    .container {
+      max-width: 1250px;
+      margin: 0 auto;
+      /* margin-top: 100px; */
+      padding: 20px;
+      padding-bottom: 100px;
+      text-align: center;
+      background-color: rgba(78, 72, 72, 0.7); /* Fond blanc semi-transparent */
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(247, 243, 243, 0.993);
+      /* color: #fff; */
+    }
+
+    /* Barre de navigation */
+    .nav-bar {
+      background-color: #142231;
+      padding: 15px;
+      text-align: center;
+      /* position: fixed; */
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px dashed white;
+    }
+
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      text-shadow: 1px 1px 15px rgb(156, 156, 140);
+
+    }
+
+    .nav-bar a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    /* En-tête */
+    header {
+      color: #fff;
+      padding: 60px 20px 30px;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    header h1 {
+        font-weight: bold;
+        margin: 0;
+        font-size: 2.5em;
+        text-shadow: 5px 5px 8px rgba(255, 255, 0, 0.682);
+        animation: fadeIn 2s ease-in;
+    }
+    header p{
+        font-size: 1.5rem;
+        text-shadow: 1px 8px 5px rgba(239, 131, 239, 0.753);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Boutons */
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 18px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    /* Section des fonctionnalités */
+    .features {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .feature {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 30px rgba(65, 64, 64, 0.99);
+      width: 40%;
+      margin: 15px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .feature h2 {
+      color: #007bff;
+      margin-top: 15px;
+    }
+
+    /* Témoignages */
+    .testimonials {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #615a5a6e;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(247, 243, 243, 0.993);
+      color: #fff;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .testimonial img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* Pied de page */
+    footer {
+      background-color: #333333a3;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+    .toggle-dark {
+        position: fixed;
+        z-index: -10;
+        top: 20px;
+        font-size: 2rem;
+        border-radius: 50%;
+        box-shadow: 10px 1px 25px yellow;
+    }
+    .fixe{
+
+        position: fixed;
+        font-weight: bold;
+        z-index: -10;
+        right: 310px;
+        border-radius: 50%;
+        top: 110px;
+        font-size: 5rem;
+        text-shadow: 10px 5px 25px yellow;
+        box-shadow: 10px 5px 25px yellow;
+    }
+  </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    
+    <div class="nav-bar">
+        <a href="#">🏠 Accueil</a>
+        <a href="php/auth.php">👤 Connexion</a>
+        <!-- <a href="#services">🩺 Services</a> -->
+        <a href="php/contact.php">📞 Contact</a>
+    </div>
+    <!-- Mode sombre -->
+    <header>
+        <div class="toggle-dark fixe">🌙</div>
+        <div class="toggle-dark" onclick="toggleDarkMode()">🌙</div>
+        <h1>Bienvenue sur le CMS Médical</h1>
+        <p>Université de Ngaoundéré</p>
+    </header>
+    
+    <div class="container">
+      
+    <p style="color: #fff; font-size: 25px;">Cette plateforme permet aux étudiants et personnels de gérer leurs consultations médicales.</p>
+    <a href="php/auth.php" class="btn">S'inscrire / Se connecter</a>
+
+    <!-- Section des fonctionnalités -->
+    <div class="features" id="services">
+      <div class="feature">
+        <img src="img/Consultations.jpeg" alt="Consultations">
+        <h2>Consultations</h2>
+        <p>Accédez facilement à vos consultations médicales et suivez votre historique.</p>
+      </div>
+      <div class="feature">
+        <img src="img/Rendez-vous.jpeg" alt="Rendez-vous">
+        <h2>Rendez-vous</h2>
+        <p>Planifiez vos rendez-vous avec les professionnels de santé de l'université.</p>
+      </div>
+      <div class="feature">
+        <img src="img/Informations.jpeg" alt="Informations">
+        <h2>Informations</h2>
+        <p>Recevez des conseils et des recommandations en matière de santé.</p>
+      </div>
+      <div class="feature">
+        <img src="img/Informations.jpeg" alt="Informations">
+        <h2>Informations</h2>
+        <p>Recevez des conseils et des recommandations en matière de santé.</p>
+      </div>
+    </div>
+
+    <!-- Témoignages -->
+    <div class="testimonials">
+      <h2>Témoignages</h2>
+      <div class="testimonial">
+        <img src="img/testimonial1.jpg" alt="Testimonial 1">
+        <p>"Cette plateforme est très utile pour gérer mes consultations médicales. Je peux facilement accéder à mes rendez-vous et suivre mon historique médical."</p>
+        <p>- Étudiant en médecine</p>
+      </div>
+      <div class="testimonial">
+        <img src="img/testimonial2.jpg" alt="Testimonial 2">
+        <p>"Je suis très satisfait de la qualité des services proposés par cette plateforme. Les professionnels de santé sont très compétents et disponibles."</p>
+        <p>- Personnel de santé</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 CMS Médical - Université de Ngaoundéré. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Script pour activer le mode sombre -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>

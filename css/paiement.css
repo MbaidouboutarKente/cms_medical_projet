@@ -1,0 +1,114 @@
+/* 🌟 Style général */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🏠 Conteneur principal */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    color: #333;
+}
+
+/* 📜 Titre */
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 28px;
+}
+
+/* 🔹 Informations étudiant */
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* 💳 Bouton de paiement */
+button {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+/* 🔴 Messages d'erreur */
+.message {
+    background: #ff4444;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* ✅ Messages de succès */
+.success {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* 📊 Graphique des paiements */
+canvas {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* 🌗 Mode sombre */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #333;
+}
+
+/* 📜 Citations */
+.quote {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.quote img {
+    max-width: 150px;
+    display: block;
+    margin: auto;
+}
+
+.quote p {
+    font-size: 18px;
+    font-style: italic;
+    color: #0056b3;
+}

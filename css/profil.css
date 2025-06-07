@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-picture {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+}
+
+.welcome-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.upload-section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.upload-section input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.upload-section button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.upload-section button[type="submit"]:hover{
+    background-color: #2980b9;
+}
+nav{
+    text-align: center;
+    margin:30px 0;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #337ab7;
+    
+    
+}
+
+nav a:hover {
+    color: #23527c;
+}
+.btn-retour {
+    background-color: #fff;
+    color: #337ab7;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-retour:hover {
+    color: #fff;
+    background-color: #23527c;
+}
+
+/* Styles pour les écrans larges */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        margin: 40px auto;
+    }
+}
+
+/* Styles pour les écrans moyens */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 700px;
+        margin: 20px auto;
+    }
+}
+
+/* Styles pour les écrans petits */
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+    .dashboard-header {
+        padding: 10px;
+    }
+    .profile-picture {
+        display: block;
+        margin: 0 auto;
+    }
+    .welcome-text {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Styles pour les écrans très petits */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .dashboard-header {
+        padding: 5px;
+    }
+    .profile-picture {
+        width: 50px;
+        height: 50px;
+    }
+}
