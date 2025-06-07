@@ -24,7 +24,7 @@ Avant l'inscription d'un étudiant dans le système médical, la plateforme vér
 
 ### 🔹 Gestion des Utilisateurs  
 - **Authentification sécurisée** via identifiants universitaires (GPI, CNS).  
-- **Différents rôles** : Étudiants, Médecins, Administrateurs.  
+- **Différents rôles** : Étudiants, Médecins, Administrateurs, Super Administrateurs.  
 - **Vérification automatique** de l’existence d’un étudiant avant son inscription dans la base médicale.  
 
 ### 🔹 Prise de Rendez-vous  
