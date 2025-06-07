@@ -1,75 +1,99 @@
-# Plateforme de Gestion des Visites Médicales - CMS Université de Ngaoundéré
+# 🏥 Application de Suivi et Gestion des Visites Médicales  
+## Centre Médical Universitaire - Université de Ngaoundéré  
 
-## 1. Introduction
+### 📌 Description  
+Ce projet vise à concevoir une **application web complète** permettant la gestion et le suivi des **visites médicales** des **étudiants** et du **personnel** au sein du **Centre Médical Universitaire (CMS)** de l’Université de Ngaoundéré.  
+L'application repose sur **deux bases de données** :  
+1. **Base Campus** : Contient les informations académiques et administratives des étudiants.  
+2. **Base Médicale** : Stocke les données des visites médicales, résultats d'examens et traitements.  
 
-### 1.1 Contexte
-Le **Centre Médico-Social** (CMS) de l’université de Ngaoundéré souhaite moderniser la gestion des visites médicales des étudiants afin de :
-- **Optimiser** l’efficacité et l'accessibilité des services.
-- **Faciliter** le suivi des examens médicaux.
-- **Réduire** les délais liés à la documentation papier.
-
-### 1.2 Objectifs
-- Développement d'une **application web** permettant la gestion des visites médicales.
-- Automatisation du processus médical en **trois phases** : laboratoire, soins, consultation.
-- Création d'un **tableau de bord interactif** pour le personnel médical.
-- **Notification par e-mail** des résultats pour les étudiants.
+Avant l'inscription d'un étudiant dans le système médical, la plateforme vérifie **s'il existe déjà** dans la base Campus avant de créer son profil médical.
 
 ---
 
-## 2. Fonctionnalités Principales
-
-### 2.1 Accès et authentification
-- Connexion sécurisée pour **étudiants** et **personnel médical**.
-- Validation du paiement **CNS** et **GPI** avant accès.
-- Gestion des rôles : **administrateurs**, **médecins**, **assistants**.
-
-### 2.2 Gestion des étudiants
-- Création et mise à jour des **profils étudiants** (nom, GPI, CNS…).
-- Historique des **visites médicales** avec suivi en ligne.
-
-### 2.3 Suivi des visites médicales
-#### Phases des examens :
-1. **Laboratoire** : Enregistrement et sauvegarde des tests médicaux.
-2. **Soins** : Analyse des maladies contagieuses et recommandations.
-3. **Consultation médicale** : Diagnostic et prescription de traitements.
-
-### 2.4 Notifications et communication
-- **Notification par e-mail** après chaque étape.
-- Envoi des **résultats médicaux** et **certificats de validation**.
-
-### 2.5 Tableau de bord
-- Suivi **en temps réel** des examens en cours.
-- **Statistiques** et exportation des données en PDF/Excel.
+## 🎯 Objectifs du Projet  
+✅ **Numériser** le processus de gestion des rendez-vous médicaux  
+✅ **Centraliser** les dossiers médicaux et les suivis de consultations  
+✅ **Sécuriser** les données médicales et garantir leur confidentialité  
+✅ **Intégrer** les données académiques pour une validation préalable avant l'inscription  
+✅ **Analyser** l’activité médicale grâce à des **statistiques et rapports détaillés**  
 
 ---
 
-## 3. Technologies et Architecture
+## 🛠️ Fonctionnalités  
 
-### 3.1 Backend
-- **Django** : Framework principal.
-- **SQLite/PostgreSQL** : Base de données.
+### 🔹 Gestion des Utilisateurs  
+- **Authentification sécurisée** via identifiants universitaires (GPI, CNS).  
+- **Différents rôles** : Étudiants, Médecins, Administrateurs.  
+- **Vérification automatique** de l’existence d’un étudiant avant son inscription dans la base médicale.  
 
-### 3.2 Frontend
-- **HTML, CSS, JavaScript**, avec **Bootstrap**.
+### 🔹 Prise de Rendez-vous  
+- Réservation en ligne avec **choix du médecin, de la date et de l’heure**.  
+- Vérification automatique des **plages horaires disponibles**.  
+- Confirmation instantanée du rendez-vous par **e-mail**.  
 
-### 3.3 Notifications
-- Envoi d’e-mails via **django.core.mail**.
+### 🔹 Gestion des Consultations  
+- Tableau de bord interactif pour les **médecins** avec accès aux **dossiers médicaux des patients**.  
+- Ajout et modification des **diagnostics médicaux** et traitements prescrits.  
+- Enregistrement des **tests effectués** et **observations médicales**.  
+- Génération et stockage des **certificats médicaux**.  
 
-### 3.4 Sécurité
-- **Authentification** sécurisée et **gestion des sessions**.
-- **Chiffrement des mots de passe** pour protection des données.
+### 🔹 Suivi des Antécédents Médicaux  
+- Sauvegarde sécurisée des résultats des examens et consultations passées.  
+- Historique médical consultable pour chaque **patient**.  
+- Mise à jour des dossiers avec les nouvelles **prescriptions** et recommandations.  
+
+### 🔹 Notifications et Rappels  
+- **Envoi automatique de notifications** par e-mail/SMS pour :  
+  ✅ Confirmation de rendez-vous  
+  ✅ Rappel avant consultation  
+  ✅ Notification des **résultats médicaux**  
+
+### 🔹 Sécurité et Confidentialité  
+- **Chiffrement des mots de passe** et stockage sécurisé des données.  
+- **Validation des identités** avec la base Campus avant inscription.  
+- Protocoles de **gestion d’accès** pour protéger les informations sensibles.  
+
+### 🔹 Rapports et Statistiques  
+- Affichage des **statistiques globales** des visites et consultations.  
+- Génération de **rapports PDF/Excel** pour suivi administratif.  
+- Indicateurs clés pour améliorer **la gestion des ressources**.  
 
 ---
 
-## 4. Installation et Déploiement
+## 🚀 Architecture et Technologies  
 
-### 4.1 Prérequis
-- **Python** installé
-- **Django** installé (`pip install django`)
-- Base de données **SQLite/PostgreSQL** configurée
+### 🔹 Backend  
+- **Python** (Flask) : Gestion des traitements et des requêtes côté serveur.  
+- **AJAX** : Communication asynchrone entre le client et le serveur.  
+- **SQLite / PostgreSQL** :  
+  - **Base Campus** : Données académiques des étudiants.  
+  - **Base Médicale** : Informations sur les consultations et les dossiers médicaux.  
 
-### 4.2 Installation
-1. **Cloner le dépôt** :
-   ```bash
-   git clone https://github.com/monprojet.git
-   cd monprojet
+### 🔹 Frontend  
+- **HTML, CSS, JavaScript** : Interface utilisateur interactive et réactive.  
+- **Bootstrap** : Design moderne et responsive pour les navigateurs et mobiles.  
+
+### 🔹 Sécurité  
+- Gestion des **sessions utilisateur** et authentification.  
+- **Chiffrement** des mots de passe et données sensibles.  
+- **Vérification préalable** avant toute inscription dans la base médicale.  
+
+### 🔹 Notifications  
+- **SMTP** : Envoi d’e-mails sécurisés.  
+- Intégration d’API pour **envoi de SMS** aux étudiants et personnel médical.  
+
+---
+
+## 🔧 Installation et Déploiement  
+
+### 💾 Prérequis  
+- **Python 3.x** installé  
+- **Flask** et les dépendances (`pip install flask`)  
+- Bases de données **SQLite / PostgreSQL** configurées  
+
+### 🏗️ Installation  
+1️⃣ **Cloner le dépôt**  
+```bash
+git clone https://github.com/monprojet.git
+cd monprojet
