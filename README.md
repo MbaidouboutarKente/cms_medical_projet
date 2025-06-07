@@ -30,7 +30,7 @@ Avant l'inscription d'un étudiant dans le système médical, la plateforme vér
 ### 🔹 Prise de Rendez-vous  
 - Réservation en ligne avec **choix du médecin, de la date et de l’heure**.  
 - Vérification automatique des **plages horaires disponibles**.  
-- Confirmation instantanée du rendez-vous par **e-mail**.  
+- Confirmation instantanée du rendez-vous par **notification**.  
 
 ### 🔹 Gestion des Consultations  
 - Tableau de bord interactif pour les **médecins** avec accès aux **dossiers médicaux des patients**.  
