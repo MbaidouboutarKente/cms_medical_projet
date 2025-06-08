@@ -2,20 +2,21 @@
 ## Centre Médical Universitaire - Université de Ngaoundéré  
 
 ### 📌 Description  
-Cette application web permet de **suivre et gérer les visites médicales** des **étudiants** et du **personnel** au sein du **Centre Médical Universitaire (CMS)** de l’Université de Ngaoundéré.  
-Elle repose sur **deux bases de données** :
-1. **Base Campus** : Contient les informations académiques des étudiants.  
-2. **Base Médicale** : Stocke les données des consultations et des traitements.  
+L’application **CMS Médical** permet de **suivre et gérer les visites médicales** des **étudiants** et du **personnel** du Centre Médical Universitaire de l’Université de Ngaoundéré.  
 
-Avant d’inscrire un étudiant dans la base médicale, le système **vérifie son existence** dans la base Campus pour garantir une **authenticité et une cohérence des données**.  
+Elle repose sur **deux bases de données** :  
+1️⃣ **Base Campus** : Données académiques des étudiants.  
+2️⃣ **Base Médicale** : Informations sur les consultations et traitements.  
+
+Le système **vérifie l’existence** d’un étudiant dans la base Campus avant son inscription en base Médicale, garantissant une **authenticité et une cohérence des données**.  
 
 ---
 
 ## 🎯 Objectifs du Projet  
-✅ **Automatiser** la gestion des rendez-vous médicaux  
-✅ **Centraliser** les dossiers médicaux et académiques  
-✅ **Sécuriser** les données et garantir leur confidentialité  
-✅ **Optimiser** la coordination entre campus et services médicaux  
+✅ **Automatisation** de la gestion des consultations médicales  
+✅ **Centralisation** des dossiers médicaux et académiques  
+✅ **Sécurisation** des données et contrôle des accès  
+✅ **Optimisation** de la coordination entre campus et services médicaux  
 
 ---
 
@@ -23,30 +24,39 @@ Avant d’inscrire un étudiant dans la base médicale, le système **vérifie s
 
 ### 🔹 Gestion des Utilisateurs  
 - **Authentification sécurisée** (GPI, CNS).  
-- **Différents rôles** : Étudiants, Médecins, Administrateurs.  
-- **Vérification automatique** dans la **base Campus** avant inscription en base médicale.  
+- Différents **rôles** : Étudiants, Médecins, Administrateurs.  
+- Vérification dans la **Base Campus** avant inscription en base Médicale.  
 
 ### 🔹 Prise de Rendez-vous  
-- Réservation en ligne avec choix du **médecin, date et heure**.  
+- Réservation avec choix du **médecin, date et heure**.  
 - Validation automatique des **créneaux disponibles**.  
-- Confirmation instantanée du rendez-vous dans l’interface utilisateur.  
+- Confirmation instantanée du rendez-vous.  
 
 ### 🔹 Gestion des Consultations  
-- **Tableau de bord** interactif pour les **médecins**.  
+- **Tableau de bord interactif** pour les **médecins**.  
 - **Accès aux dossiers médicaux** et historique des patients.  
-- **Ajout des diagnostics, prescriptions et certificats médicaux**.  
+- **Ajout de diagnostics, prescriptions et certificats médicaux**.  
+
+### 🔹 Gestion des Certifications  
+- **Génération automatique** des **certificats médicaux**.  
+- **Téléchargement des certificats** en **format PDF**.  
+- **Validation médicale facultative** selon le type de certification.  
+
+### 🔹 Tests Médicaux sans Intervention  
+- **Possibilité de simuler un test médical** sans l’intervention d’un médecin.  
+- **Affichage des résultats** sans enregistrement définitif.  
+- **Option pour enregistrer les résultats** si souhaité.  
 
 ### 🔹 Intégration des Bases de Données  
-- Vérification de l’étudiant dans **la base Campus** avant l’ajout en base Médicale.  
-- Synchronisation automatique des **données personnelles** et académiques.  
+- Vérification des étudiants dans **Base Campus** avant leur ajout en **Base Médicale**.  
+- **Synchronisation automatique** des informations académiques et médicales.  
 
 ### 🔹 Notifications Internes  
-- **Affichage des notifications** directement dans l’application lors de la connexion.  
-- Chaque utilisateur voit ses **rappels de rendez-vous** et ses résultats médicaux **dans son tableau de bord**.  
+- **Affichage des notifications** lors de la connexion.  
+- Rappels de **rendez-vous et consultations** affichés dans le tableau de bord.  
 
 ### 🔹 Sécurité et Confidentialité  
 - **Chiffrement des mots de passe** et protection des données sensibles.  
-- **Validation préalable** avant toute inscription.  
 - **Gestion des accès** basée sur les rôles.  
 
 ### 🔹 Rapports et Statistiques  
@@ -58,36 +68,33 @@ Avant d’inscrire un étudiant dans la base médicale, le système **vérifie s
 ## 🚀 Architecture et Technologies  
 
 ### 🔹 Backend  
-- **PHP** (avec XAMPP) : Gestion des traitements et des requêtes côté serveur.  
-- **AJAX** : Communication asynchrone entre le client et le serveur.  
+- **PHP** (avec XAMPP) : Gestion des traitements et requêtes serveur.  
+- **AJAX** : Communication asynchrone entre client et serveur.  
 - **MySQL** :  
   - **Base Campus** : Données académiques des étudiants.  
-  - **Base Médicale** : Informations sur les consultations et les traitements.  
+  - **Base Médicale** : Dossiers médicaux et consultations.  
 
 ### 🔹 Frontend  
 - **HTML, CSS, JavaScript** : Interface utilisateur interactive.  
 - **Bootstrap** : Design moderne et responsive.  
 
 ### 🔹 Sécurité  
-- **Gestion des sessions** et authentification sécurisée.  
-- **Vérification préalable** avant inscription en base médicale.  
+- **Gestion des sessions et authentification sécurisée**.  
+- **Protection des données et validation d’accès**.  
 
 ### 🔹 Notifications  
-- **Système de notifications internes** visible lors de la connexion.  
+- **Système de notifications internes** visible lors de la connexion.
 
----
+- 
+📢 **Un fichier `members.md` présente les membres du projet.**
 
 ## 🔧 Installation et Déploiement  
 
 ### 💾 Prérequis  
-- **XAMPP** installé (Apache + MySQL + PHP)  
-- **Base de données MySQL** configurée
-
-
-   # La liste des membres se trouve dans le fichier members.md
+- **XAMPP** installé (Apache + MySQL + PHP).  
+- **Base de données MySQL** configurée.  
 
 ### 🏗️ Installation  
 1️⃣ **Télécharger et copier les fichiers** dans `htdocs` :  
 ```bash
 cd /opt/lampp/htdocs/cms_medical_project
-
