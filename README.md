@@ -86,7 +86,7 @@ Le système **vérifie l’existence** d’un étudiant dans la base Campus avan
 - **Système de notifications internes** visible lors de la connexion.
 
 - 
-📢 **Un fichier `members.md` présente les membres du projet.**
+## 📢 **Un fichier `members.md` présente les membres du projet.**
 
 ## 🔧 Installation et Déploiement  
 
