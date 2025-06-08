@@ -81,9 +81,13 @@ Avant d’inscrire un étudiant dans la base médicale, le système **vérifie s
 
 ### 💾 Prérequis  
 - **XAMPP** installé (Apache + MySQL + PHP)  
-- **Base de données MySQL** configurée  
+- **Base de données MySQL** configurée
+
+
+   # La liste des membres se trouve dans le fichier members.md
 
 ### 🏗️ Installation  
 1️⃣ **Télécharger et copier les fichiers** dans `htdocs` :  
 ```bash
 cd /opt/lampp/htdocs/cms_medical_project
+
