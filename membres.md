@@ -1,59 +1,50 @@
 # 👥 Membres du Projet  
 
-## 📌 Présentation  
-Ce document détaille les **membres de l’équipe** du projet **CMS Médical**, leurs rôles et leurs contributions. Chaque membre a travaillé **main dans la main** avec les autres pour développer sa **catégorie spécifique** tout en assurant une bonne collaboration.  
+## 📌 Introduction  
+Ce document présente les **membres de l’équipe** ayant contribué au développement de l’application **CMS Médical**, dédiée à la gestion des visites médicales au sein de l’Université de Ngaoundéré.  
+
+Chaque membre a apporté son expertise pour assurer un **système performant, sécurisé et ergonomique**, facilitant la gestion des dossiers médicaux des étudiants et du personnel universitaire.  
 
 ---
 
-## 🏗️ Équipe du Projet  
+## 🏗 Équipe du Projet  
 
-| Nom | Matricule | Rôle | Contributions |
-|------|------------|----------------------------|--------------------------------------------|
-| **Mbairamadji Clark** | 21A245FS | Développeur Backend | Gestion des requêtes PHP/MySQL, validation et intégration API |
-| **Membre 2** | XXXXXXXX | Développeur Frontend | Conception de l’interface utilisateur, intégration responsive |
-| **Membre 3** | XXXXXXXX | Développeur Full Stack | Optimisation des interactions AJAX et communication serveur-client |
-| **Membre 4** | XXXXXXXX | Concepteur UX/UI | Structuration visuelle, optimisation de l’expérience utilisateur |
-| **Membre 5** | XXXXXXXX | Concepteur Base de Données | Modélisation et gestion des bases de données, optimisation des requêtes |
-
-*(Remplace "XXXXXXXX" par les matricules des autres membres si disponibles.)*
+| **Nom & Matricule** | **Rôle** | **Contributions** |
+|------------------------------|-----------------------|------------------------------------------------|
+| **Adoum Oumar Idriss (22A692FS)** | Développeur Full Stack | Optimisation des interactions AJAX et communication serveur-client |
+| **Ahmat Idriss Mahamat (21A241FS)** | Développeur Frontend | Conception de l’interface utilisateur, intégration responsive |
+| **Mahamat Adoum Souleymane Adoum (21A283FS)** | Concepteur Base de Données | Modélisation et gestion des bases MySQL, optimisation des requêtes |
+| **Mbairamadji Clark (21A245FS)** | Développeur Backend | Gestion des requêtes PHP/MySQL, validation et intégration API |
+| **Yangani Alfat Benaja (24A444FS)** | Concepteur UX/UI | Structuration visuelle, optimisation de l’expérience utilisateur |
 
 ---
 
-## 🔍 Collaboration entre Catégories  
+## 🔍 Présentation des Rôles  
 
-### 🔹 **Mbairamadji Clark - Développement Backend**  
-✅ Collaboration avec **Membre 3** pour les requêtes AJAX et l’optimisation serveur.  
-✅ Intégration des **données traitées** avec **Membre 5** pour la cohérence base de données.  
-✅ Ajustement du **système de validation des utilisateurs** avec **Membre 4**.  
+### 🎯 **Adoum Oumar Idriss - Développeur Full Stack**  
+✅ Mise en place des **requêtes AJAX** pour optimiser les interactions serveur-client  
+✅ Amélioration des performances de l’application et des interfaces dynamiques  
 
-### 🔹 **Membre 2 - Développement Frontend**  
-✅ Travaille avec **Membre 4** pour le **design UX/UI** et l’intégration des pages.  
-✅ Synchronisation des **éléments interactifs** avec **Membre 3** pour un affichage dynamique.  
-✅ Tests et ajustements des **interfaces responsives** avec toute l’équipe.  
+### 🎨 **Ahmat Idriss Mahamat - Développeur Frontend**  
+✅ Conception de l’**interface utilisateur** et **intégration du design responsive**  
+✅ Collaboration avec le backend pour le **chargement dynamique des données**  
 
-### 🔹 **Membre 3 - Développement Full Stack**  
-✅ Mise en place de la **connexion AJAX** entre le frontend et le backend.  
-✅ Échange avec **Clark** pour optimiser les traitements côté serveur.  
-✅ Ajustement des interactions avec **Membre 2** pour un **frontend fluide**.  
+### 📊 **Mahamat Adoum Souleymane Adoum - Concepteur Base de Données**  
+✅ Modélisation des bases **Campus & Médicale** avec optimisation des requêtes  
+✅ Vérification des relations et gestion des **transactions SQL** pour un stockage efficace  
 
-### 🔹 **Membre 4 - Conception UX/UI**  
-✅ Conception des **maquettes et flux utilisateurs** avec **Membre 2**.  
-✅ Définition des **règles d’expérience utilisateur** pour le projet.  
-✅ Vérification des **affichages dynamiques** avec **Membre 3**.  
+### 🎯 **Mbairamadji Clark - Développeur Backend**  
+✅ Gestion des requêtes **PHP/MySQL** et des fonctionnalités serveur  
+✅ Développement du **système d’authentification sécurisé**  
+✅ Intégration des bases de données et validation des utilisateurs  
 
-### 🔹 **Membre 5 - Concepteur Base de Données**  
-✅ Structuration des bases **Campus & Médicale** avec **Clark**.  
-✅ Optimisation des requêtes avec **Membre 3** pour un **chargement rapide**.  
-✅ Vérification et gestion des **données dynamiques** avec **Membre 2**.  
+### 🎨 **Yangani Alfat Benaja - Concepteur UX/UI**  
+✅ Élaboration des **maquettes graphiques** pour une expérience utilisateur fluide  
+✅ Travail sur l’ergonomie et la structuration des menus pour une navigation intuitive  
 
 ---
 
 ## 🎯 Conclusion  
-Ce projet a été développé avec une approche **collaborative et intégrée**, où chaque membre a travaillé **main dans la main** pour assurer un développement efficace et cohérent.  
+L’équipe a travaillé **main dans la main**, chaque membre apportant son expertise pour **optimiser le fonctionnement et la sécurité du CMS Médical**.  
 
-Grâce à cette **coordination forte**, l’application **CMS Médical** est optimisée pour **une meilleure gestion et un suivi médical performant**.  
-
----
-
-💡 **Ajoute les matricules des autres membres pour compléter le fichier !** 🚀😊  
-Tu veux un ajustement ou une autre mise en forme ? 🔥
+Grâce à cette collaboration, le projet assure **une gestion fluide des rendez-vous et consultations médicales** des étudiants et du personnel universitaire.  
